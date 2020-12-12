@@ -4,7 +4,7 @@ Installation via PowerShell (DELETES ANY EXISTING CONFIGURATION):
 ```powershell
 $configDir = "${env:LOCALAPPDATA}\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
 Remove-Item -Recurse -Force $configDir -ErrorAction Ignore
-git clone https://github.com/nacitar/windows-terminal-settings.git $configDir
+git clone "https://github.com/nacitar/windows-terminal-settings.git" $configDir
 ```
 
 
