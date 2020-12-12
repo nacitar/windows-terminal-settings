@@ -89,7 +89,8 @@
   "actions": [
     // see: https://aka.ms/terminal-keybindings
     // Model after gnome-terminal, see: https://help.gnome.org/users/gnome-terminal/stable/adv-keyboard-shortcuts.html.en
-    // NOTE: windows terminal lacks a command for moving tabs left or right, but you can drag them with a mouse.
+    // NOTE: no command to open a new window, or to move tabs to the left or right.
+    { "command": "closeWindow", "keys": "ctrl+shift+q" },
     { "command": null, "keys": "ctrl+shift+pgdn" },
     { "command": null, "keys": "ctrl+shift+pgup" },
     { "command": "scrollDownPage", "keys": "shift+pgdn" },
