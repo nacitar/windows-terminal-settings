@@ -16,7 +16,7 @@
       // applies to all profiles
       "colorScheme": "SofterTango",
       "fontFace": "Inconsolata",
-      //"cursorShape": "filledBox"
+      "cursorShape": "filledBox",
       "fontSize": 10
     },
     "list": [
