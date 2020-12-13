@@ -16,8 +16,8 @@
       // applies to all profiles
       "colorScheme": "SofterTango",
       "fontFace": "Inconsolata",
-      "fontSize": 10,
-      "cursorShape": "filledBox"
+      //"cursorShape": "filledBox"
+      "fontSize": 10
     },
     "list": [
       {
@@ -96,6 +96,8 @@
     { "command": "scrollDownPage", "keys": "shift+pgdn" },
     { "command": "scrollUpPage", "keys": "shift+pgup" },
     // These won't work until this merge from Dec 08 2020 rolls out: https://github.com/microsoft/terminal/pull/8459
+    { "command": null, "keys": "ctrl+shift+home" },
+    { "command": null, "keys": "ctrl+shift+end" },
     { "command": "scrollToTop", "keys": "shift+home" },
     { "command": "scrollToBottom", "keys": "shift+end" },
     // doesn't open into the same working directory as the current tab yet, see: https://github.com/microsoft/terminal/issues/3158#issuecomment-727026693
