@@ -88,13 +88,13 @@
 
   "actions": [
     // see: https://aka.ms/terminal-keybindings
-    // Model after gnome-terminal, see: https://help.gnome.org/users/gnome-terminal/stable/adv-keyboard-shortcuts.html.en
-    // NOTE: no command to open a new window, or to move tabs to the left or right.
+    // Modeled after gnome-terminal, see: https://help.gnome.org/users/gnome-terminal/stable/adv-keyboard-shortcuts.html.en
+    // NOTE: no command to open a new window, see: https://github.com/microsoft/terminal/issues/1051
     { "command": "closeWindow", "keys": "ctrl+shift+q" },
-    { "command": null, "keys": "ctrl+shift+pgdn" },
-    { "command": null, "keys": "ctrl+shift+pgup" },
-    { "command": "scrollDownPage", "keys": "shift+pgdn" },
-    { "command": "scrollUpPage", "keys": "shift+pgup" },
+    { "command": null, "keys": "ctrl+shift+pagedown" },
+    { "command": null, "keys": "ctrl+shift+pageup" },
+    { "command": "scrollDownPage", "keys": "shift+pagedown" },
+    { "command": "scrollUpPage", "keys": "shift+pageup" },
     // These won't work until this merge from Dec 08 2020 rolls out: https://github.com/microsoft/terminal/pull/8459
     { "command": null, "keys": "ctrl+shift+home" },
     { "command": null, "keys": "ctrl+shift+end" },
@@ -124,6 +124,9 @@
     { "command": { "action": "switchToTab", "index": 6 }, "keys": "alt+7" },
     { "command": { "action": "switchToTab", "index": 7 }, "keys": "alt+8" },
     { "command": { "action": "switchToTab", "index": 8 }, "keys": "alt+9" },
+    // These won't work until this merge from Nov 25 2020 rolls out: https://github.com/microsoft/terminal/pull/8338
+    { "command": { "action" : "moveTab", "direction": "forward" }, "keys": "ctrl+shift+pagedown" },
+    { "command": { "action" : "moveTab", "direction": "backward" }, "keys": "ctrl+shift+pageup" },
     // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
     // These two lines additionally bind them to Ctrl+C and Ctrl+V.
     // To learn more about selection, visit https://aka.ms/terminal-selection
