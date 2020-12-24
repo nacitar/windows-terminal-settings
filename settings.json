@@ -15,7 +15,11 @@
     "defaults": {
       // applies to all profiles
       "colorScheme": "SofterTango",
+      
+      // https://fonts.google.com/specimen/Inconsolata
+      // Install from: ms-appdata:///local/fonts/Inconsolata-VariableFont_wdth,wght.ttf
       "fontFace": "Inconsolata",
+      
       "cursorShape": "filledBox",
       "fontSize": 10
     },

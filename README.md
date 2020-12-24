@@ -12,3 +12,8 @@ Icons were made via the included .svg files using ImageMagick:
 ```
 magick convert -background none input.svg -define icon:auto-resize icon.ico
 ```
+
+
+The font Inconsolata is used, and is included in the fonts/ directory,
+but must be manualy installed.  The font is not mine, it was created
+by google and is available here: https://fonts.google.com/specimen/Inconsolata
