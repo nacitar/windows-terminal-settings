@@ -91,6 +91,13 @@
   ],
 
   "actions": [
+    // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+    // These two lines additionally bind them to Ctrl+C and Ctrl+V.
+    // To learn more about selection, visit https://aka.ms/terminal-selection
+    // NOTE: not advised!  Breaks Ctrl+V for column-selection in vim
+    //{ "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+    //{ "command": "paste", "keys": "ctrl+v" },
+
     // see: https://aka.ms/terminal-keybindings
     // Modeled after gnome-terminal, see: https://help.gnome.org/users/gnome-terminal/stable/adv-keyboard-shortcuts.html.en
     // NOTE: no command to open a new window, see: https://github.com/microsoft/terminal/issues/1051
@@ -131,11 +138,6 @@
     // These won't work until this merge from Nov 25 2020 rolls out: https://github.com/microsoft/terminal/pull/8338
     { "command": { "action" : "moveTab", "direction": "forward" }, "keys": "ctrl+shift+pagedown" },
     { "command": { "action" : "moveTab", "direction": "backward" }, "keys": "ctrl+shift+pageup" },
-    // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-    // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-    // To learn more about selection, visit https://aka.ms/terminal-selection
-    { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
-    { "command": "paste", "keys": "ctrl+v" },
 
     // Press Ctrl+Shift+F to open the search box
     { "command": "find", "keys": "ctrl+shift+f" },
