@@ -100,13 +100,12 @@
 
     // see: https://aka.ms/terminal-keybindings
     // Modeled after gnome-terminal, see: https://help.gnome.org/users/gnome-terminal/stable/adv-keyboard-shortcuts.html.en
-    // NOTE: no command to open a new window, see: https://github.com/microsoft/terminal/issues/1051
+    { "command": "newWindow", "keys": "ctrl+shift+n" },
     { "command": "closeWindow", "keys": "ctrl+shift+q" },
     { "command": null, "keys": "ctrl+shift+pagedown" },
     { "command": null, "keys": "ctrl+shift+pageup" },
     { "command": "scrollDownPage", "keys": "shift+pagedown" },
     { "command": "scrollUpPage", "keys": "shift+pageup" },
-    // These won't work until this merge from Dec 08 2020 rolls out: https://github.com/microsoft/terminal/pull/8459
     { "command": null, "keys": "ctrl+shift+home" },
     { "command": null, "keys": "ctrl+shift+end" },
     { "command": "scrollToTop", "keys": "shift+home" },
@@ -135,7 +134,6 @@
     { "command": { "action": "switchToTab", "index": 6 }, "keys": "alt+7" },
     { "command": { "action": "switchToTab", "index": 7 }, "keys": "alt+8" },
     { "command": { "action": "switchToTab", "index": 8 }, "keys": "alt+9" },
-    // These won't work until this merge from Nov 25 2020 rolls out: https://github.com/microsoft/terminal/pull/8338
     { "command": { "action" : "moveTab", "direction": "forward" }, "keys": "ctrl+shift+pagedown" },
     { "command": { "action" : "moveTab", "direction": "backward" }, "keys": "ctrl+shift+pageup" },
 
