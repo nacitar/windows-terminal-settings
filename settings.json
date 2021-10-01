@@ -36,7 +36,7 @@
         "name": "ArchLinux",
         "icon": "ms-appdata:///local/icons/archlinux.ico",
         "source": "Windows.Terminal.Wsl",
-        "commandline": "wsl.exe ~ -d ArchLinux"  // start in $HOME not %USERPROFILE%
+        "commandline": "wsl.exe -d ArchLinux"
       },
       {
         "hidden": false,
@@ -44,7 +44,7 @@
         "name": "Ubuntu",
         "icon": "ms-appdata:///local/icons/ubuntu.ico",
         "source": "Windows.Terminal.Wsl",
-        "commandline": "wsl.exe ~ -d Ubuntu"  // start in $HOME not %USERPROFILE%
+        "commandline": "wsl.exe -d Ubuntu"
       },
       {
         "hidden": false,
